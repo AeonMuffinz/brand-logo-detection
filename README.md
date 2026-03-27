@@ -11,9 +11,10 @@ Comparison of **YOLOv7** and **RTMDet** for brand logo detection. Both models we
 | Model | Backbone | Framework |
 |-------|----------|-----------|
 | YOLOv7 | E-ELAN + auxiliary heads | PyTorch — [WongKinYiu/yolov7](https://github.com/WongKinYiu/yolov7) |
-| RTMDet-M | CSPNeXt + PAFPN | MMDetection |
+| RTMDet-M | CSPNeXt + PAFPN | [MMDetection](https://github.com/open-mmlab/mmdetection) |
 
-**Finding:** RTMDet-M outperformed YOLOv7 on small-object recall while using significantly fewer parameters. The anchor-free design and improved feature pyramid allow more reliable localisation of small logo patches.
+> ### 🔍 Key Finding
+> RTMDet-M outperformed YOLOv7 on small-object recall while using significantly fewer parameters. The anchor-free design and improved feature pyramid allow more reliable localisation of small logo patches.
 
 ---
 
@@ -26,10 +27,7 @@ Download: [LogoDet-3K on Kaggle](https://www.kaggle.com/datasets/lyly99/logodet3
 
 ### Custom Dataset
 
-Collected from the internet, labeled in YOLO format (`class_id cx cy w h`, normalised), and augmented per brand. ~300 images were used for training; 4 representative samples are included in this repo for illustration.
-
-Label format: `dataset/own_dataset/labels/`  
-Images: `dataset/own_dataset/images/`
+Manually collected from the internet, labeled in YOLO format (`class_id cx cy w h`, normalised), and augmented per brand. ~300 images across multiple brand categories were used for fine-tuning.
 
 ---
 
@@ -41,7 +39,7 @@ Fine-tuned model outputs on the custom test set.
 
 ![Levi's detection](results/bbox_detections/Levis_366b3e7643484db5bd1f384cf675a2ea_webp.rf.68ec4bd65f5fdc6d945d52ec3c3b6ddd.jpg)
 ![The North Face detection](results/bbox_detections/The_North_Face_0A8BKD_5DS_Q2_webp.rf.fe8f00b131b1bd7859a316ab40346ce9.jpg)
-![Under Armour detection](results/bbox_detections/Under_Armour_1329590-601_1_webp.rf.bc3d9c2706670af1e1c3d57cb1d6b77f.jpg)
+![US Polo Assn detection](results/bbox_detections/UsPoloAssn_524974s_webp.rf.ef02c6246a541881c0e700b74febc79a.jpg)
 
 ---
 
@@ -58,8 +56,8 @@ Place downloaded files under `weights/`.
 ## Installation
 
 ```bash
-git clone https://github.com/AeonMuffinz/brand-logo-detection-project.git
-cd brand-logo-detection-project
+git clone https://github.com/AeonMuffinz/brand-logo-detection.git
+cd brand-logo-detection
 pip install -r requirements.txt
 ```
 
@@ -130,7 +128,7 @@ Key settings:
 # From the cloned yolov7 repo root:
 python detect.py \
   --weights /path/to/weights/yolov7_finetuned.pt \
-  --source /path/to/dataset/own_dataset/images/ \
+  --source /path/to/dataset/images/ \
   --conf-thres 0.4 \
   --img-size 640
 ```
