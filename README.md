@@ -39,7 +39,7 @@ Fine-tuned model outputs on the custom test set.
 
 ![Levi's detection](results/bbox_detections/Levis_366b3e7643484db5bd1f384cf675a2ea_webp.rf.68ec4bd65f5fdc6d945d52ec3c3b6ddd.jpg)
 ![The North Face detection](results/bbox_detections/The_North_Face_0A8BKD_5DS_Q2_webp.rf.fe8f00b131b1bd7859a316ab40346ce9.jpg)
-![US Polo Assn detection](results/bbox_detections/UsPoloAssn_524974s_webp.rf.ef02c6246a541881c0e700b74febc79a.jpg)
+![Versace detection](results/bbox_detections/Versace_23492021_53590602_600_webp.rf.43857e74ddb669f0c02d3af193baa74a.jpg)
 
 ---
 
