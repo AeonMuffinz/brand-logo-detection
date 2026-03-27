@@ -1,0 +1,30 @@
+# ─── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+.env
+.venv
+venv/
+env/
+
+# ─── LogoDet-3K (too large to commit) ────────────────────────────────────────
+dataset/logodet3k/images/
+dataset/logodet3k/labels/
+
+# ─── Weights ──────────────────────────────────────────────────────────────────
+weights/*.pt
+weights/*.pth
+weights/*.onnx
+weights/*.engine
+!weights/README.md
+
+# ─── Training output ──────────────────────────────────────────────────────────
+runs/
+work_dirs/
+wandb/
+
+# ─── OS / IDE ─────────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
