@@ -10,7 +10,7 @@ Comparison of **YOLOv7** and **RTMDet** for brand logo detection. Both models we
 
 | Model | Backbone | Framework |
 |-------|----------|-----------|
-| YOLOv7 | E-ELAN + auxiliary heads | PyTorch — [WongKinYiu/yolov7](https://github.com/WongKinYiu/yolov7) |
+| YOLOv7 | E-ELAN + auxiliary heads | [WongKinYiu/yolov7](https://github.com/WongKinYiu/yolov7) |
 | RTMDet-M | CSPNeXt + PAFPN | [MMDetection](https://github.com/open-mmlab/mmdetection) |
 
 > ### 🔍 Key Finding
