@@ -27,7 +27,7 @@ Download: [LogoDet-3K on Kaggle](https://www.kaggle.com/datasets/lyly99/logodet3
 
 ### Custom Dataset
 
-Manually collected from the internet, labeled in YOLO format (`class_id cx cy w h`, normalised), and augmented per brand. ~300 images across multiple brand categories were used for fine-tuning.
+Manually collected from the internet, labeled in YOLO format (`class_id cx cy w h`, normalised), and augmented per brand. 1300 images across multiple brand categories were used for fine-tuning.
 
 ---
 
